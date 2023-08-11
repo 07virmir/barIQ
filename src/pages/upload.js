@@ -14,12 +14,10 @@ const Upload = () => {
     const url = 'http://127.0.0.1:5000/';
     const formData = new FormData();
     formData.append('file', file);
-    //FileSaver.saveAs(file)
     const config = {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
-        //'Content-Type': 'multipart/form-data',
       },
     };
     fetch(url, {
